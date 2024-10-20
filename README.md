@@ -1,8 +1,8 @@
 **Home page**
-![Frame 2](https://github.com/user-attachments/assets/568c6479-df7d-4429-afc2-4b0364d202c7)
+![Frame 2](https://github.com/user-attachments/assets/a605570c-7080-4853-8ce1-06afdddad972)
 
 **Add New Article**
-![add](https://github.com/user-attachments/assets/71935b84-8fc8-404c-9a36-8d38f512b696)
+![add](https://github.com/user-attachments/assets/c8ed7de1-1ba9-4da4-8b0a-a32084c901af)
 
 **Edit An Existing Article**
-![edit](https://github.com/user-attachments/assets/bcad3bbe-2a2e-41fd-91a6-b131fb704f49)
+![edit](https://github.com/user-attachments/assets/d9b28c4b-b8f8-4018-918e-59ff779c1ede)
