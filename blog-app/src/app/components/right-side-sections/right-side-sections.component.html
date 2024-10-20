@@ -1,0 +1,9 @@
+<div class="container mt-4 mb-5 custom-container">
+  <div class="row">
+    <div class="border border-secondary text-center d-flex flex-column align-items-center pb-4 main-section">
+      <p class="section-title" [ngClass]="titleClass">{{ title }}</p>
+      <p>{{ content }}</p>
+       <ng-content></ng-content>
+    </div>
+  </div>
+</div>

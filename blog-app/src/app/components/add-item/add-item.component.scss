@@ -1,0 +1,9 @@
+.add-btn {
+  background-color: #f5ebdb;
+  border-radius: 0;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: #e6ddcf;
+  }
+}

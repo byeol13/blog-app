@@ -1,0 +1,24 @@
+form {
+  gap: .5rem;
+
+  input {
+    border: .09rem solid #6C757D;
+    transition: border-color 0.3s;
+
+    &:hover {
+      border-color: #bfac8c;
+      outline: none;
+    }
+  }
+
+  .sub-btn {
+    background-color: #808080;
+    border: none;
+    transition: background-color 0.3s, color 0.3s;
+
+    &:hover {
+      background-color: #4e4e4e;
+    }
+  }
+}
+

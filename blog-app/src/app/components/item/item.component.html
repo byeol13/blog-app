@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="px-4 py-3 card-custom">
+    <div class="top-container col-12">
+       <h3 class="card-title mb-2">{{item.title}}</h3>
+       <p class="creation-date">{{ item.createdAt | date:'EE, d MMMM yyyy' }}</p>
+      <div class="img-container">
+        <img src="{{item.img_url}}" class="card-img" alt="Card Image">
+      </div>
+    </div>
+    
+    <div class="details-container col-12 d-flex flex-column">
+      <div class="card-body text-container">
+        <p *ngIf="isExpanded" class="card-text">{{item.description}} </p> <button (click)="toggleReadLessOrMore()" *ngIf="isExpanded" class="btn-read-desc read-less">Read Less</button>
+        <p *ngIf="!isExpanded" class="card-text">{{item.description.substring(0, 200)}}...<button (click)="toggleReadLessOrMore()" class="btn-read-desc">Read More</button></p>
+      </div>
+  
+      <div class="buttons-group mt-1 d-flex flex-row">
+        <button class="btn edit-btn" (click)="triggerEditItem()">Edit</button>
+        <button class="btn del-btn" (click)="delete()">Delete</button>
+      </div>
+    </div>
+  </div>
+</div>

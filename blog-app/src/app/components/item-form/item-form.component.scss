@@ -1,0 +1,83 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999; 
+
+
+  .popup-container {
+    background-color: #fff;
+    box-shadow: 0 .25rem .9rem rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+
+    p {
+      font-weight: 500;
+      font-size: 1.7rem;
+      color: #48494b;
+      font-family: Lato;
+    }
+
+    .inputs-container {
+      .title-container,
+      .desc-container,
+      .img-container {
+        display: flex;
+        flex-direction: column;
+
+        label {
+          margin: 1rem 0 .5rem;
+        }
+
+        input,
+        textarea {
+          padding: .8rem;
+          border: .06rem solid #ced4da;
+          transition: border-color 0.3s;
+
+          &:focus {
+            border-color: #bfac8c;
+            outline: none;
+          }
+        }
+      }
+    }
+
+    .buttons-container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+
+      .btn {
+        border-radius: 0;
+        transition: background-color 0.3s, color 0.3s;
+
+        &.btn-submit {
+          background-color: #333; 
+          color: #fff;
+
+          &:hover {
+            background-color: #48494b;
+          }
+        }
+
+        &.btn-cancel {
+          background-color: #d3d3d3; 
+          color: #000;
+
+          &:hover {
+            background-color: #e4e4e4;
+          }
+        }
+      }
+    }
+  }
+}
+

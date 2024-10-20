@@ -1,0 +1,18 @@
+.carousel-item img {
+  max-height: 50vh; 
+  object-fit: cover;
+  object-position: center;
+  transition: max-height 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .carousel-item img {
+    max-height: 37vh;
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel-item img {
+    max-height: 30vh;
+  }
+}

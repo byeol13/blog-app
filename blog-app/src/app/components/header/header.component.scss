@@ -1,0 +1,45 @@
+.header-container {
+  position: relative;
+  height: 30vh; 
+  width: 100%;
+
+  .logo {
+    width: calc(25vw + 1.5rem);
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.3s ease-in-out;
+  }
+
+  .slogan {
+    position: absolute;
+    bottom: -2%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 300;
+    font-size: calc(.2rem + 1vw);
+    text-align: center;
+    transition: font-size 0.3s ease-in-out;
+    font-family: Lato;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    height: 27vh;
+
+    .logo {
+      width: calc(30vw + 1.5rem);
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .header-container {
+    height: 21vh;
+  }
+}
+
+
+

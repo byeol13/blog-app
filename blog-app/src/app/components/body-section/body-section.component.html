@@ -1,0 +1,34 @@
+<div class="container col-10 mt-5">
+  <div class="row mb-md-3">
+    <div class="col-md-7 me-md-3 ms-md-4">
+      <app-item 
+      *ngFor="let i of paginatedItems" 
+      [item]="i" 
+      (onDeleteItem)="getItems()" 
+      (onEditItem)="editItem($event)"></app-item>
+
+      <div class="d-flex justify-content-center align-items-center pagination-controls mb-sm-4">
+        <button class="pagination-btn" 
+        (click)="previousPage()" 
+        [disabled]="currentPage === 1"><i class="bi bi-chevron-left"></i></button>
+        <span>{{ currentPage }} of {{ totalPages }}</span>
+        <button class="pagination-btn" 
+        (click)="nextPage()" 
+        [disabled]="currentPage == totalPages"><i class="bi bi-chevron-right"></i></button>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-4">
+      <app-about></app-about>
+      <app-add-item 
+      (onAddArticle)="toggleStepper = !toggleStepper"></app-add-item>
+      <app-item-form 
+      *ngIf="toggleStepper" 
+      [selectedItem]="selectedItem" 
+      (saveAddedItem)="closeAdding()" 
+      (saveEditedItem)="closeEdit()"
+      (onCancel)="closeEdit()"></app-item-form>
+      <app-subscription></app-subscription>
+    </div>
+  </div>
+</div>
