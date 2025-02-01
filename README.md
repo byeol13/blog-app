@@ -6,3 +6,14 @@
 
 **Edit An Existing Article**
 ![edit](https://github.com/user-attachments/assets/d9b28c4b-b8f8-4018-918e-59ff779c1ede)
+
+---
+
+## Technologies Used
+
+- **Frontend**: Angular (Typescript)
+- **Backend**: Spring Boot
+- **Database**: MySQL
+- **Other Tools**: RESTful APIs, Bootstrap
+
+---
